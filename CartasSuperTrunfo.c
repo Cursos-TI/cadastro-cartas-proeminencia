@@ -91,5 +91,15 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km^2\n", (populacao_2 / area_2));
     printf("PIB per Capita: %.2f reais\n", (pib_2 * 1000000000 / populacao_2));
 
+    
+    printf("---Comparação de cartas---\n");
+    printf("População: (%d)\n", populacao_1 > populacao_2);
+    printf("Área: (%d)\n", area_1 > area_2);
+    printf("PIB: (%d)\n", pib_1 > pib_2);
+    printf("Pontos Turísticos: (%d)\n", pontosTuristicos_1 > pontosTuristicos_2);
+    printf("Densidade Populacional: (%d)\n", (populacao_1 / area_1) < (populacao_2 / area_2));
+    printf("PIB per Capita: (%d)\n", (pib_1 * 1000000000 / populacao_1) > (pib_2 * 1000000000 / populacao_2));
+    // Expressão para calcular o super poder
+    printf("Super Poder: (%d)\n", (populacao_1 + area_1 + pib_1 + pontosTuristicos_1 + (area_1 / populacao_1) + (pib_1 * 1000000000 / populacao_1)) > (populacao_2 + area_2 + pib_2 + pontosTuristicos_2 + (area_2 / populacao_2) + (pib_2 * 1000000000 / populacao_2)));
     return 0;
 } 
